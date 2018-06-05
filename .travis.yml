@@ -1,7 +1,7 @@
  language: python
 
  python:
- - Python 3.6.5
+ - Python 3.6
 
  install:
  - pip install ccxt
