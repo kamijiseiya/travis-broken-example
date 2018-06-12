@@ -1,22 +1,16 @@
-# coding:utf-8
-
 import unittest
-from fuga import Fuga
 
-class HogeTest(unittest.TestCase):
-
-    def setUp(self):
-        print('setUp')
-
-    def test_first(self):
-        print('test_first')
-
-    def test_fuga(self):
-        fuga = Fuga()
-        self.assertTrue(fuga.index())
+from sample_a import SampleA
 
 
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTests(unittest.makeSuite(HogeTest))
-    return suite
+class TestSampleA(unittest.TestCase):
+  def test_a1(self):
+    print('Test sample A1')
+    a = SampleA()
+    a.hello()
+
+  def test_a2(self):
+    print('Test sample A2')
+
+  def a3(self):
+    print('Test sample A3')
