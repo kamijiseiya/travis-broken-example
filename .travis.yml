@@ -7,7 +7,7 @@ python:
 
 
 install:
-  - pip install coveralls
+  - pip333 install coveralls
 
 script:
   - python --version
