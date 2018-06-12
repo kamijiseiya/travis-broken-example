@@ -4,8 +4,6 @@ python:
   - 3.6
 
 
-install:
-  - pip install coveralls
 
 script:
   - python --version
