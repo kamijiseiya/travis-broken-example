@@ -1,13 +1,12 @@
- language: python
+anguage: python
 
- python:
- - Python 3.6
+python:
+  - 3.3
+  - 3.4
 
- install:
- - pip install ccxt
- - pip install coveralls
+install:
+  - pip install coveralls
 
- script
- - python --version
- - python -m unittest discover test/
+script:
+  - coverage run --source=hoge_test setup.py test
 
