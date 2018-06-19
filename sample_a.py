@@ -1,3 +1,7 @@
 import os
-for k, v in os.environ.items():
-    print("{key} : {value}".format(key=k, value=v))
+
+for env in os.environ:
+    print(env)
+
+print('----------------------------------')
+print(os.environ.get('secure'))
