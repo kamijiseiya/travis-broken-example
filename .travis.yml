@@ -10,7 +10,6 @@ install:
   - pip install coverage coveralls
   - pip install ccxt
 
-
 script:
   - python --version
   - python sample_a.py 
