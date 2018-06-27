@@ -10,12 +10,16 @@ install:
   - pip install coverage coveralls
   - pip install ccxt
 
+ibefore_install:
+  - openssl aes-256-cbc -K $encrypted_b6cbb0f706c0_key -iv $encrypted_b6cbb0f706c0_iv -in setup.py.enc -out setup.py -d
+  - tar xvf secrets.tar
+
 script:
+  - ls
   - python --version
   - python sample_a.py 
   - python -m unittest
-
-
+ 
 env:
   global:
       # travis encrypt VAR1=foo VAR2=baz
